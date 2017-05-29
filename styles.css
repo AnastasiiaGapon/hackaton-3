@@ -1,0 +1,71 @@
+.alert {
+    position: fixed;
+    left: 0;
+    transition: top;
+}
+
+@keyframes slideIn {
+    0% { top: -100% }
+    100% { top: 1% }
+}
+
+.slide-in {
+    animation: slideIn cubic-bezier(0.0, 0.0, 0.2, 1) 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@keyframes slideUp {
+    0% { top: 1% }
+    100% { top: -100% }
+}
+
+.slide-up {
+    top: -100%;
+    animation: slideUp cubic-bezier(0.4, 0.0, 1, 1) 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@media (min-width: 1025px) {
+    .slide-in {
+        -webkit-animation-duration: .2s;
+        animation-duration: .2s;
+    }
+    .slide-up {
+        -webkit-animation-duration: .18s;
+        animation-duration: .18s;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slide-in {
+        -webkit-animation-duration: .293s;
+        animation-duration: .293s;
+    }
+    .slide-up {
+        -webkit-animation-duration: .254s;
+        animation-duration: .254s;
+    }
+}
+
+@media (max-width: 640px) {
+    .slide-in {
+        -webkit-animation-duration: .225s;
+        animation-duration: .225s;
+    }
+    .slide-up {
+        -webkit-animation-duration: .195s;
+        animation-duration: .195s;
+    }
+}
+
+.btn {
+    position: fixed;
+    top: auto;
+    bottom: 20px;
+}
+
+
