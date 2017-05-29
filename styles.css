@@ -10,7 +10,7 @@
 }
 
 .slide-in {
-    animation: slideIn cubic-bezier(0.0, 0.0, 0.2, 1) 1;
+    animation: slideIn ease-out 1;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
@@ -22,7 +22,7 @@
 
 .slide-up {
     top: -100%;
-    animation: slideUp cubic-bezier(0.4, 0.0, 1, 1) 1;
+    animation: slideUp ease-in 1;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
