@@ -13,8 +13,6 @@
     animation: slideIn cubic-bezier(0.0, 0.0, 0.2, 1) 1;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
 }
 
 @keyframes slideUp {
