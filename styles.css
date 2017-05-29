@@ -38,7 +38,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 641px) and (max-width: 1024px) {
     .slide-in {
         -webkit-animation-duration: .293s;
         animation-duration: .293s;
